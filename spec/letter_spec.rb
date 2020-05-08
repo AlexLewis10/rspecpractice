@@ -8,4 +8,12 @@ describe Letter do
     it "returns the word" do
         expect(subject.get_middle("A")).to eq('A')
     end 
+
+    it "returns the word" do
+        expect(subject.get_middle("of")).to eq('of')
+    end 
+
+    it "returns the letter t" do
+        expect(subject.get_middle('testing')).to eq('t')
+    end 
 end
