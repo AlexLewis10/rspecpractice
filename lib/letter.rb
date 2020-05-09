@@ -1,5 +1,12 @@
 class Letter
-    def get_middle(word)
-        return word
+  def get_middle(word)
+    if word.length.odd?
+      word[word.length/2]
+    else
+      word[word.length/2-1..word.length/2]
     end
+  end
 end
+
+letter = Letter.new
+p letter.get_middle("letter")
